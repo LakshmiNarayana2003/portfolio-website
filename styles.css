@@ -1,0 +1,485 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+html, body {
+  overflow: hidden;
+  font-family: 'Tangerine', serif;
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: -10px;
+  padding-top: 2px;
+  background-color: #5c5858;
+  padding-left: 25px;
+  padding-right: 79px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-bottom: -10px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-links a:hover {
+  color: #f1b04e;
+}
+
+
+/* Logo Styling */
+.logo {
+  color: rgb(248, 245, 245);
+  font-size: 24px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: -50px;
+  padding-top: 50px;
+  
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  padding-top: 39px;
+ 
+}
+
+/* Icon Styling */
+.icon-link {
+  display: inline-block;
+}
+
+.icon-image {
+  width: 35px;
+  height: auto;
+}
+
+/* Download Button (Smaller Size) */
+.cleck .download-btn {
+  position: relative;
+  display: inline-block;
+  top: 2px;
+  padding: 10px 20px;
+  background-color: #aed45a;
+  color: rgb(38, 27, 38);
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Hover Effect for Download Button */
+.cleck .download-btn:hover {
+  background-color: #abe1ef;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(22, 22, 22);
+}
+
+/* SVG Animation */
+.cleck .download-btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cleck .download-btn rect {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-dasharray: 422, 0;
+  transition: all 0.35s linear;
+}
+
+.cleck .download-btn:hover rect {
+  stroke: #28d319;
+  stroke-width: 7;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  transition: all 2.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Container Styling */
+.container {
+  height: 100%;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 50px;
+  position: relative;
+}
+
+/* Intro Text */
+.intro-text {
+  color: #011627;
+  font-size: 30px;
+  padding-left: 45px;
+  margin-bottom: 50px;
+  z-index: 2;
+  scroll-snap-align: start;
+  margin-top: 160px;
+  padding-top: 125px;
+  font-family: "Baskervville", serif;
+  font-weight: 100;
+}
+
+.greeting {
+  margin-top: 20px;
+  font-size: 65px;
+  margin-bottom: 25px;
+  padding-left: 1px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 200;
+}
+
+/* Image styling */
+.intro-image {
+  max-width: 579px;
+  height: 10rem;
+  border-radius: 8px;
+  position: absolute;
+  right: -15px;
+  top: 59%;
+  transform: translateY(-50%);
+}
+
+/* Why Hire Me Section */
+.why-hire-me {
+  padding-left: 50px;
+  color: #181717;
+  font-size: 24px;
+  z-index: 2;
+  scroll-snap-align: start;
+  margin-top: 45px;
+  width: 60%;
+  padding-top: 2rem;
+}
+
+.why-hire-me h1 {
+  font-size: 59px;
+  margin-bottom: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+}
+
+.why-hire-me h2 {
+  font-size: 30px;
+  margin-bottom: 9px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 200;
+}
+
+.why-hire-me p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Baskervville", serif;
+  font-weight: 300;
+}
+
+.right-content {
+  z-index: 999;
+  position: absolute;
+  left: 1110px;
+  top: -725px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  width: 40%;
+}
+
+.card1, .card2, .card3 {
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+  font-size: 20px;
+  position: relative;
+  margin-bottom: -100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card1 {
+  background-color: #d294e3;
+  top: 879px;
+  right: 315px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card2 {
+  background-color: #d99ee9;
+  top: 990px;
+  right: 39px;
+  padding-right: 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card3 {
+  background-color: #d294e3;
+  top: 1105px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  right: 315px;
+}
+
+/* Part 3 - My Skills Section */
+#my-skills {
+  text-align: center;
+  padding: 50px;
+  z-index: 999;
+  font-size: 50px;
+}
+
+.skill-cards {
+  display: flex;
+  justify-content: center;
+  gap: 77.5px;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-left: -17px;
+}
+
+.skill-card {
+  background-color: #dba3ea;
+  border-radius: 25px;
+  padding-left: 10px;
+  box-shadow: 0 4px 8px rgba(28, 26, 26, 0.1);
+  width: 23%;
+  max-width: 275px;
+  height: 275px;
+  text-align: center;
+  transition: transform 0.4s ease;
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 17px;
+}
+
+.skill-card:hover {
+  transform: translateY(-15px);
+}
+
+.skill-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.skill-card p {
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  padding-top:15px;
+  font-family: "Inconsolata", serif;
+}
+
+#strategy-direction {
+  color: rgb(30, 30, 34);
+  font-size: 27px;
+}
+
+#one {
+  color: #1d1c1c;
+  padding-top:20px;
+  font-size: 20px;
+}
+
+#four {
+  font-size: 27px;
+}
+/* 4 buttons with 3 cards each >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+/* Project Section Styles */
+#projects-section {
+  position: relative;
+  z-index: 10;
+  padding: 50px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 10px;
+}
+
+.projects-header {
+  text-align: left;
+  margin-bottom: 57px;
+}
+
+.projects-header h2 {
+  font-size: 62px;
+  margin-bottom: 1px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.projects-header p {
+  font-size: 50px;
+  color: #011627;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 50px;
+  padding-left: 320px;
+}
+
+.project-btn {
+  padding: 20px 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(246, 106, 51);
+  color: #0b0f13;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.project-btn.active {
+  background-color: #918c89;
+  color: rgb(20, 19, 19);
+}
+
+.project-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(24, 23, 23, 0.1);
+}
+
+.project-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-left: 125px;
+  padding-bottom:50px;
+  text-align: center;
+}
+
+.project-card {
+  background-color: #d294e3; /* Light background for the card */
+  border-radius: 25px; /* Rounded corners */
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0 4px 8px rgba(15, 12, 12, 0.1); /* Light shadow effect */
+  width: 100%; /* Adjust the width to ensure 4 fit in a row */
+  max-width: 275px; /* Set a max width for uniformity */
+  height: 260px;
+  text-align: center;
+  transition: all 0.3s ease;/* Smooth hover effect */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 110px;
+  margin-bottom: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-2px); /* Move the card up on hover */
+}
+
+.project-card h3 {
+  font-size: 27px; /* Smaller font size */
+  margin-bottom: 15px; /* Reduced margin */
+  color: #0d0d0d;
+  margin-top: 15px;
+}
+
+.project-card p {
+  font-size: 16px; /* Adjust font size for description */
+  font-family: 'Verdana', sans-serif; /* Set font family for description */
+  color: #151414; /* Set color for the description */
+  line-height: 1.5; /* Adjust line height for better readability */
+  margin-bottom: 10px; /* Add space below the description */
+  text-align: center; /* Center the description inside the card */
+}
+
+/* Animation classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .project-cards-container {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-cards-container {
+      grid-template-columns: 1fr;
+  }
+  
+  .project-buttons {
+      flex-wrap: wrap;
+  }
+  
+  .project-btn {
+      width: calc(50% - 0.5rem);
+  }
+}
+
+.project-link {
+  display: inline-block;
+  font-size: 25px; /* Adjust the size as needed */
+  color: #111214; /* Change the color if desired */
+  text-decoration: none;
+  margin-top: -10px; /* Moves the link upwards */
+  transition: color 0.3s ease;
+  margin-right: center;
+}
+
+.project-link:hover {
+  color: #0b0f13; /* Hover color */
+}

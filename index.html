@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nani</title>
+    <link href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the CSS file -->
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">My Skills</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </nav>
+    
+
+    <div  class="container">
+
+        <section id="home" class="intro-text">
+            <img src="image/nani2.png" alt="Your Photo" class="intro-image">
+            <span class="greeting">Nani here...!</span>
+            <span class="description">
+                <br> Enthusiastic Software Engineer with  <br> knowledge in networking and Linux actively <br> seeking
+                an entry-level
+                opportunity to leverage <br> expertise in web development Python<br>and (HTML, CSS, JavaScript, 3js)
+            </span>
+            <ul class="nav-links">
+                <div class="menu">
+                    <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMhwfzRQFDkCRKLWJbcQmJGtCCvKrwVXHvKxBtnfNVdVLCljgxRGrsmRCZWwXjkzHcpGKj" target="_blank" class="icon-link"><img src="image/removed.png" alt="Mail" class="icon-image"></a></li>
+                    <li><a href="https://www.linkedin.com/in/lakshmi-narayana-mg/" target="_blank" class="icon-link"><img src="image/romvedlinked.png" alt="LinkedIn" class="icon-image"></a></li>
+                    <li><a href="https://github.com/LakshmiNarayana2003" target="_blank" class="icon-link"><img src="image/removedgit.png" alt="GitHub" class="icon-image"></a></li>
+                    <li><a href="https://medium.com/@meits7920/building-a-pdf-question-assistant-using-python-a8fbfd438461" target="_blank" class="icon-link"><img src="image/arti.png" alt="Contact" class="icon-image"></a></li>     
+                    <li class="cleck">
+                        <a href="https://drive.google.com/file/d/1vEK03EZv5Uxi6zd31pUN_F4uD7cyOHrt/view?usp=sharing"
+                            target="_blank" download="Lakshmi_Narayana_Resume.pdf" class="download-btn">
+                            Download Resume
+                            <svg width="150px" height="50px">
+                                <rect x="0" y="0" width="100%" height="100%"></rect>
+                            </svg>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </section>
+
+        <section id="services" class="why-hire-me">
+            <h1>Why Should You Hire Me?</h1>
+            <p>
+                I bring a strong background in software engineering with hands-on <br> 
+                experience in web development and programming.<br>
+                <br>
+                My skills in Python, web-dev and modern web technologies enable<br>
+                me to tackle complex problems and deliver effective solutions.<br> 
+                <br>
+                Additionally, my proactive approach to learning and passion<br>for technology
+                drive me to stay
+                updated with industry trends and continuously<br> improve my skill set I am committed to
+                contributing positively to
+                your team <br> and helping achieve your organization's goals.
+            </p>
+
+            <div class="right-content">
+                <div class="card1">
+                    <h2>Visual Design</h2>
+                    <p>Craft sleek and modern user interfaces, blending creativity with cutting-edge tools like Figma</p>
+                </div>
+                <div class="card2">
+                    <h2>Collaborative</h2>
+                    <p>Develop exceptional communication teamwork skills to enhance productivity, resolve challenges, and foster a positive work environment.</p>
+                </div>
+                <div class="card3">
+                    <h2>AI Expertise</h2>
+                    <p>Harness the power of AI to develop innovative solutions, from intelligent chatbots to automation tools that enhance user experiences.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Skills Section -->
+        <section id="my-skills">
+            <h2>My Expertise</h2>
+            <div class="skill-cards">
+                <div class="skill-card">
+                    <img src="image/1.png" alt="Web Scraping">
+                    <h3>Web Scraping</h3>
+                    <p>Using the best tools for dynamic content extraction, utilizing APIs when available, and solving challenges with best techniques.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="image/2.jpg" alt="Python Automation">
+                    <h3>Python Automation</h3>
+                    <p>Develop efficient automation scripts using Python to streamline workflows, optimize tasks, and boost productivity.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="image/uiux.png" alt="UI & UX Design">
+                    <h3>UI & UX Design</h3>
+                    <p>Proficient in UI/UX design, with strong experience using tools like Figma to create user-centered designs.</p>
+                </div>
+                <div class="skill-card">
+                    <img src="image/4.jpg" alt="Webflow Development">
+                    <h3>Webflow Development</h3>
+                    <p>I have experience in building responsive, I am also familiar with integrating APIs and optimizing performance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects-section">
+            <div class="projects-header">
+                <h2>My Projects</h2>
+                <p>The projects which I made</p>
+            </div>
+            
+            <div class="project-controls">
+                <div class="project-buttons">
+                    <button class="project-btn active" data-category="figam">AI/ML</button>
+                    <button class="project-btn" data-category="aiml">Figma</button>
+                    <button class="project-btn" data-category="python">Python Automation</button>
+                    <button class="project-btn" data-category="other">Other</button>
+                </div>
+                
+                <div class="project-cards-container">
+                    <!-- Cards will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script type="module" src="main.js"></script>
+    <script src="scrip.js"></script>
+</body>
+
+</html>
